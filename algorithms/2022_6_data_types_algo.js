@@ -25,7 +25,7 @@ chipotlePrice += 1;
 console.log(chipotlePrice);
 
 var halfmyage = age/2;
-var twicemyage = age * 2;
+var twicemyage = age*2;
 
 console.log("half my age is", halfmyage);
 console.log("twice my age is", twicemyage);

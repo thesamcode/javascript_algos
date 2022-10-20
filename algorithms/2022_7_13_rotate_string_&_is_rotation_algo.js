@@ -21,7 +21,8 @@ const expected3 = "ldHello Wor";
 const rotateAmnt4 = 4;
 const expected4 = "orldHello W";
 
-const rotateAmnt5 = 13; 130/11 = 11 r 9
+const rotateAmnt5 = 13; 
+// 130/11 = 11 r 9
 const expected5 = "ldHello Wor";
 
 // create temp variable
