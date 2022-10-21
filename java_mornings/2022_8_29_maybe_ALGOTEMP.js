@@ -180,8 +180,8 @@ class SinglyLinkedList {
         let runner = this.head;
         let spy = runner.next;
 
-        while(runner.next != null){
-            if (spy.next === null){
+        while (runner.next != null) {
+            if (spy.next === null) {
                 runner.next = null;
                 return spy.data;
             }
@@ -199,8 +199,9 @@ class SinglyLinkedList {
      */
 
     contains(val) {
-        if(this.isEmpty()){
-            return false}
+        if (this.isEmpty()) {
+            return false
+        }
         let runner = this.head
         while (runner.data != val) {
             if (runner.next == null) {
@@ -222,10 +223,11 @@ class SinglyLinkedList {
      *    or null when the end of the list has been reached.
      * @returns {boolean}
      */
-    containsRecursive(val, current = this.head) { 
-        if(this.isEmpty()){
-            return false}
-        if (current.data == val){
+    containsRecursive(val, current = this.head) {
+        if (this.isEmpty()) {
+            return false
+        }
+        if (current.data == val) {
             return true
         }
         // else if (current.next == null){
@@ -233,7 +235,7 @@ class SinglyLinkedList {
         // }
         // else 
         //     {return this.containsRecursive(val, current.next)}
-        if(current.next != null){
+        if (current.next != null) {
             return this.containsRecursive(val, current.next)
         }
         return false
@@ -250,7 +252,7 @@ class SinglyLinkedList {
      *    max integer as it's data.
      * @returns {?number} The max int or null if none.
      */
-    recursiveMax(runner = this.head, maxNode = this.head) { 
+    recursiveMax(runner = this.head, maxNode = this.head) {
 
     }
 }
