@@ -42,27 +42,27 @@ function canBuildS1FromS2(s1, s2) {
     let lowerCaseS1 = s1.toLowerCase();
     let lowerCaseS2 = s2.toLowerCase();
 
-    if(s2.length < s1.length) return false;
-    
-    for(let i of lowerCaseS1) {
-        if(!hashMap1.hasOwnProperty(i)){
+    if (s2.length < s1.length) return false;
+
+    for (let i of lowerCaseS1) {
+        if (!hashMap1.hasOwnProperty(i)) {
             hashMap1[i] = 1;
         }
         else {
             hashMap1[i] += 1;
         }
     }
-    for(let j of lowerCaseS2){
-        if(!hashMap2.hasOwnProperty(j)){
+    for (let j of lowerCaseS2) {
+        if (!hashMap2.hasOwnProperty(j)) {
             hashMap2[j] = 1
         }
         else {
             hashMap2[j] += 1
         }
     }
-    for(let key in hashMap2){
-        if(hashMap1.hasOwnProperty(key)){
-            if(hashMap2[key] >= hashMap1[key]){
+    for (let key in hashMap2) {
+        if (hashMap1.hasOwnProperty(key)) {
+            if (hashMap2[key] >= hashMap1[key]) {
                 continue;
             }
             else {
